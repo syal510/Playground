@@ -1,0 +1,16 @@
+tbal=int(input())
+trun=int(input())
+run=int(input())
+bal=int(input())
+tov=round(tbal/6)
+print(tov)
+ovf=(bal//6)+0.1*(bal%6)
+print(ovf)
+crr=round((run/ovf),1)
+print(crr)
+trr=round(6*(trun/tbal),1)
+print(trr)
+if crr>trr:
+    print('Eligible to Win')
+else:
+    print('Not Eligible to Win')
